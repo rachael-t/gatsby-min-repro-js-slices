@@ -16,3 +16,8 @@ exports.createPages = async ({ actions }) => {
     defer: true,
   })
 }
+exports.onPostBuild = ({ reporter }) => {
+ reporter.info(
+  `Site has been built!`
+ );
+};
